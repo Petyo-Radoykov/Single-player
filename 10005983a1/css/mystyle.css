@@ -1,0 +1,334 @@
+body {
+    background-color: rgb(3,20,40);
+}
+
+#login {
+	position:absolute; /*it can be fixed too*/
+	left:0; right:0;
+	top:0; bottom:0;
+	margin:auto;
+
+	/*this to solve "the content will not be cut when the window is smaller than the content": */
+	max-width:100%;
+	max-height:100%;
+	overflow:auto;
+
+	width: 1040px;
+	height: 650px;
+	
+    background: url(../assets/splashScreen/splash_bg.png);
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#loading {
+	display: block; 
+	float: right;
+	margin-top: 30%;
+	margin-right: 30%;
+	
+    width: 50px;
+    height: 50px;
+	
+	/*border: 1px solid red;*/
+}
+
+#loading img {
+	display: block; 
+    width: 100%;
+    height: 100%;
+	
+	/*border: 1px solid green;*/
+}
+
+#playBtn {
+	display: none; 
+	float: right;
+	margin-top: 30%;
+	margin-right: 22%;
+	
+    right: 20px;
+	height: 35px;
+    width: 200px;
+	
+  /*background-color: #f1fec7;*/
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #042d65;
+  cursor: pointer;
+ /* display: inline-block;*/
+  font-family: Arial;
+  font-size: 30px;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@keyframes myGlowing {
+  0% { background-color: #fecd21; box-shadow: 0 0 3px #fecd21; }
+  50% { background-color: #f1fec7; box-shadow: 0 0 10px #f1fec7; }
+  100% { background-color: #fecd21; box-shadow: 0 0 3px #fecd21; }
+}
+
+#playBtn {
+  animation: myGlowing 1500ms infinite;
+}
+
+#playBtn:hover  {
+  background-color: #f1fec7;
+  -webkit-animation-play-state: paused;
+   -moz-animation-play-state: paused;
+   -o-animation-play-state: paused;
+   animation-play-state: paused;
+}
+
+#fblogin {
+	position: absolute;
+    top: 360px;
+    right: 20px;
+    width: 200px;
+	
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  
+  display: none;
+}
+
+@keyframes glowing {
+  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+}
+
+#fblogin {
+  animation: glowing 1500ms infinite;
+}
+
+#game {
+	position:absolute; /*it can be fixed too*/
+	left:0; right:0;
+	top:0; bottom:0;
+	margin:auto;
+
+	/*this to solve "the content will not be cut when the window is smaller than the content": */
+	/*max-width:100%;
+	max-height:100%;
+	overflow:auto;*/
+
+	width: 900px;
+	height: 600px;
+}
+
+#gameover{
+	position: absolute;
+    top: 0;
+    right: 0;
+	
+	height: 600px;
+    width: 900px;
+	
+	background: rgba(54, 25, 25, .7);
+	
+	z-index: 200;
+}
+
+#gamewin{
+	position: absolute;
+    top: 0;
+    right: 0;
+	
+	height: 600px;
+    width: 900px;
+	
+	background: rgba(54, 25, 25, .7);
+	
+	z-index: 200;
+}
+
+.text{
+	position: absolute;
+    top: 300px;
+    right: 370px;
+	
+	font-size: 40px;
+	
+	color: white;
+}
+
+#row1{
+	position: absolute;
+	top: 370px;
+}
+
+#row2{
+	position: absolute;
+	top: 400px;
+}
+
+#row3{
+	position: absolute;
+	top: 430px;
+}
+
+#row4{
+	position: absolute;
+	top: 460px;
+}
+
+
+.yourStatsLeft{
+	position: absolute;
+    left: 370px;
+	
+	width: 150px;
+	
+	font-size: 20px;
+	
+	color: white;
+	
+	/*border: solid 1px red;*/
+}
+
+.yourStatsRight{
+	position: absolute;
+    left: 550px;
+	
+	font-size: 20px;
+	
+	color: white;
+	
+	/*border: solid 1px green;*/
+}
+
+.playAgain {
+	position: absolute;
+    top: 530px;
+    right: 50px;
+    width: 200px;
+	
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #004A7F;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+@keyframes glowing {
+   0% { background-color: #fecd21; box-shadow: 0 0 3px #fecd21; }
+  50% { background-color: #f1fec7; box-shadow: 0 0 10px #f1fec7; }
+  100% { background-color: #fecd21; box-shadow: 0 0 3px #fecd21; }
+}
+
+
+.playAgain {
+  animation: glowing 1500ms infinite;
+}
+
+#life{
+	position: absolute;
+    top: 20px;
+    right: 20px;
+	
+	height: auto;
+    width: 110px;
+	
+	border-radius: 15px;
+	
+	color: white;
+	
+	background: rgba(54, 25, 25, .5);
+}
+
+#life #count{
+	display: block;
+	float: right;
+	
+	height: 25px;
+	line-height: 25px;
+	
+	/*margin-right: 12px;*/
+}
+
+#life img{
+	display: block;
+	float: right;
+	
+	padding-top: 2px;
+	padding-right: 8px;
+	
+}
+
+#clock{
+	position: absolute;
+    top: 20px;
+    right: 140px;
+	
+	height: auto;
+    width: 60px;
+	
+	border-radius: 15px;
+	
+	color: white;
+	
+	background: rgba(54, 25, 25, .5);
+}
+
+#clock #timer{
+	display: block;
+	float: right;
+	
+	height: 25px;
+	line-height: 25px;
+	
+	margin-right: 12px;
+}
+
+/*#stats{
+	//display: block;
+	float: left;
+	
+	height: auto;
+	width: 400px;
+	
+	background-color: rgba(30, 144, 255, .9);
+}*/
+
+#textLeft{
+	display: block;
+	float: left;
+	
+	margin-left: 5px;
+}
+
+.textRight{
+	display: block;
+	float: right;
+	
+	margin-right: 5px;
+}
+
+canvas{
+	position:absolute; 
+	left:0; right:0;
+	top:0; bottom:0;
+}
+

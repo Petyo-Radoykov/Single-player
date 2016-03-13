@@ -1,0 +1,446 @@
+.darkCover { 
+   position: fixed;
+  
+   z-index: 100;
+   background-color: black;
+   opacity: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.darkContent { 
+   position: fixed;
+   background: none;
+
+   border: 8px solid rgba(255, 255, 255, .2);
+   -moz-border-radius: 8px;
+   -webkit-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: 0 0 20px #333;
+   -moz-box-shadow: 0 0 20px #333;
+   box-shadow: 0 0 20px #333;
+   border: 8px solid #999\9;
+   overflow: visible /*hidden*/;
+   color: #333;
+   opacity: 1;/**/
+
+   /***************/
+  /* width: 400px;/*280*/
+  /* height: 310px;*/
+   
+   width: 300px;/*280*/
+   height: 274px;
+   
+   
+   z-index: 101;
+   left: 50%;
+   top: 50%;
+   margin-left: -150px;/*-140*/
+   margin-top: -137px;
+}
+
+.whiteContainer {
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+	 left: 0px;
+     top: 0px;
+	 
+	 float: left;
+	 display: block;
+	 background-color: rgb(3,20,40);
+	 
+	 z-index: 102; 
+} 
+
+.exitButton{
+	position: absolute;
+	right: -28px;
+	top: -22px;
+	cursor: pointer;
+	width: 42px;
+	height: 42px;
+	
+	background: url(../assets/splashScreen/menu/exit.png) no-repeat 0 0;
+   
+	z-index: 103;
+}
+
+.exitButton:hover{
+	background: url(../assets/splashScreen/menu/exitHover.png) no-repeat 0 0;
+}
+
+.exitButton:active{
+	background: url(../assets/splashScreen/menu/exit.png) no-repeat 0 0;
+}
+
+.exitButton img{
+	/*float: left;
+	z-index: 104;*/
+}
+
+.prompFormTitle { 
+   float: left;
+   background-color: rgb(3,20,40);
+   width:240px;
+   text-align: left;
+   margin-left: 30px;
+   margin-right: 30px;
+   
+   font-family: Arial, sans-serif;
+   font-size: 32px;
+   font-weight: normal;
+   color: #fecd21;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   border-bottom: 5px solid #fecd21;
+}
+
+
+/****************|login link|***************/
+.loginFormContainer{
+	display: block;
+	float: left;
+	width:auto;
+	margin-left: 30px;
+	
+   /* border: 1px solid white;*/
+}
+
+.menuBtn{
+	float: left;
+	margin-top: 20px;
+	/*margin-right: 22%;*/
+	
+    right: 20px;
+	height: 35px;
+    width: 235px;
+	
+  background-color: #fecd21;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #042d65;
+  cursor: pointer;
+  display: block;
+  font-family: Arial;
+  font-size: 25px;
+  padding: 3px 1px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menuBtn:hover{
+	background-color: #f1fec7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-input-placeholder {
+   color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black;  
+}
+
+:-ms-input-placeholder {  
+   color: black;  
+}
+
+.loginFormContainer  form #message{
+	float: left;
+	
+	 width:330px;
+    text-align: left;
+    margin: 15px 0 0;
+    margin-right: 40px;
+	
+	
+	font-family: Arial, sans-serif;
+	font-size: .8em;
+}
+
+.loginFormContainer  form .textAndLinks{
+	float: left;
+	display: inline;
+	height: auto;
+	margin-top: 21px;
+	
+	
+	/* border: 1px solid green;*/
+}
+
+
+.loginFormContainer form .textAndLinks input[type="text"],
+.loginFormContainer form .textAndLinks input[type="password"]{
+	float: left;
+
+	-webkit-appearance: textfield;
+	padding: 1px;
+	background-color: white;
+	border: 2px inset;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	cursor: auto;
+
+	font-family:  Arial, Sans-Serif;
+	font-size: 13px;
+	color: #000000;
+	
+	width: 165px;
+}
+
+.loginFormContainer form .textAndLinks input[type="password"]{
+	margin-left: 3px;
+}
+
+.loginFormContainer form .textAndLinks #forgotIDLink,
+.loginFormContainer form .textAndLinks #forgotPassLink,
+.loginFormContainer form .textAndLinks #registerLink{
+	float: left;
+	color: #00649d;
+	text-decoration: underline;
+	cursor: auto;
+	
+	font-family: Arial, sans-serif;
+	vertical-align: baseline;
+	font-size: .8em;
+}
+
+.loginFormContainer form .textAndLinks #forgotPassLink{
+	padding-left:87px;
+	padding-right:52px;
+}
+
+.loginFormContainer form .textAndLinks #registerLink{
+	padding-top:14px;
+	padding-bottom:1px;
+}
+
+
+.loginFormContainer form .buttonsDiv{
+	float: left;
+	display: inline;
+	
+	width:330px;
+   
+   border-top: 1px dotted #ccc;
+}
+/************************************************************/
+.loginFormContainer form .buttonsDiv #submit{
+	font-weight: bold;
+}
+
+.loginFormContainer form .buttonsDiv #cancel{
+
+}
+
+.loginFormContainer form .buttonsDiv #submit,
+.loginFormContainer form .buttonsDiv #cancel{ 
+	float: right;
+	margin-left: 25px;
+	margin-top: 20px;
+
+	font-family: Arial, Helvetica;
+	background: #DBDBDB;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#DBDBDB');
+	background: -webkit-linear-gradient(top, #F5F5F5, #DBDBDB);
+	background: -moz-linear-gradient(top, #F5F5F5, #DBDBDB);
+	background: -o-linear-gradient(top, #F5F5F5, #DBDBDB);
+	background: -ms-linear-gradient(top, #F5F5F5, #DBDBDB);
+	background: linear-gradient(top, #F5F5F5, #DBDBDB);
+	border: 1px solid #DBDBDB;
+	color: #000;
+	padding: 7px 20px;
+	margin-bottom: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+	box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+	text-shadow: #FFF 0 1px 0;
+	min-width: 120px;
+	min-width: 90px\9;
+	text-align: center;
+	cursor: pointer;
+	box-sizing: border-box;
+	text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+	
+	border-left-color: rgb(219, 219, 219);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: rgb(219, 219, 219);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: rgb(219, 219, 219);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+	-webkit-appearance: push-button;
+	-webkit-user-select: none;
+	white-space: pre;
+}
+
+.loginFormContainer form .buttonsDiv #submit:hover,
+.loginFormContainer form .buttonsDiv #cancel:hover{ 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CBCBCB');
+	background: -webkit-linear-gradient(top, #FFFFFF, #CBCBCB);
+	background: -moz-linear-gradient(top, #FFFFFF, #CBCBCB);
+	background: -o-linear-gradient(top, #FFFFFF, #CBCBCB);
+	background: -ms-linear-gradient(top, #FFFFFF, #CBCBCB);
+	background: linear-gradient(top, #FFFFFF, #CBCBCB);
+	
+	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,.5);
+	-moz-box-shadow: 0px 2px 3px rgba(0,0,0,.5);
+	box-shadow: 0px 2px 3px rgba(0,0,0,.5);
+}
+
+.loginFormContainer form .buttonsDiv #submit:active,
+.loginFormContainer form .buttonsDiv #cancel:active{ 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CBCBCB', endColorstr='#FFFFFF');
+	background: -webkit-linear-gradient(top, #CBCBCB, #FFFFFF);
+	background: -moz-linear-gradient(top, #CBCBCB, #FFFFFF);
+	background: -o-linear-gradient(top, #CBCBCB, #FFFFFF);
+	background: -ms-linear-gradient(top, #CBCBCB, #FFFFFF);
+	background: linear-gradient(top, #CBCBCB, #FFFFFF);
+	
+	-webkit-box-shadow: none;
+	-moz-box-shadow:none;
+	box-shadow: none;
+	
+	color:  #333333;
+	
+} 
+
+/*
+.loginFormContainer form .buttonsDiv #submit:hover,
+.loginFormContainer form .buttonsDiv #submit:cancel{ 
+   border: 1px solid #000000;
+	color: #000000;
+	text-shadow: 0px 1px white;
+}*/
+
+#myContainer{
+   width: 320px;/*280*/
+   height: 466px;
+   
+   
+   z-index: 101;
+   left: 50%;
+   top: 50%;
+   margin-left: -160px;/*-140*/
+   margin-top: -233px;
+	
+	/*border: 1px solid green;*/
+}
+
+#container{
+	/*padding-top: 30px;*/
+	
+	background: url(../assets/splashScreen/menu/controls.png) no-repeat 0 0;
+	display: block;
+	float: left;
+	
+	height: 400px;
+	width: 320px;
+	
+	 z-index: 5000;
+	
+	/*border: 1px solid red;*/
+}
+
+.menuRow{
+	display: inline-block;
+	float: left;
+	padding-top: 10px;
+	padding-left: 20px;
+	
+	width: 100%;
+	color: white;
+}
+
+#HSnum{
+	display: block;
+	float: left;
+	
+	width: 15px;
+	
+	/*border: solid 1px green;*/
+}
+
+#HSfname{
+	display: block;
+	float: left;
+	
+	width: 55px;
+	/*border: solid 1px red;*/
+}
+
+#HSlname{
+	display: block;
+	float: left;
+	
+	width: 75px;
+	/*border: solid 1px orange;*/
+}
+
+#HSlife{
+	display: block;
+	float: left;
+	
+	width: 25px;
+	/*border: solid 1px black;*/
+}
+
+#HSpercent{
+	display: block;
+	float: left;
+	
+	width: 35px;
+	/*border: solid 1px yellow;*/
+}
+
+#HSattempts{
+	display: block;
+	float: left;
+	
+	width: 25px;
+	/*border: solid 1px red;*/
+}
+
+#HSbonus{
+	display: block;
+	float: left;
+	
+	width: 35px;
+	/*border: solid 1px green;*/
+}
+
+
+
+
+
+
+
